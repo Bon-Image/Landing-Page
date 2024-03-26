@@ -16,8 +16,37 @@ body {
 
 .header-logo-links {
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+}
+
+.header-content {
+    display: flex;
+    gap: 20px;
+    color: rgb(170, 166, 166);
+    padding-bottom: 70px;
+
+}
+
+.header-content, 
+.header-logo-links {
+    padding-right: 150px;
+    padding-left: 150px;
     justify-content: space-between;
-    padding: 15px;
+
+}
+
+.site-discription {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text {
+    width: 300px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #main-title {
@@ -58,4 +87,20 @@ ul {
     display: flex;
     list-style: none;
     gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: rgb(18, 132, 238);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    background-color: #f76e25;
 }
