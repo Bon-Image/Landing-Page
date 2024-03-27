@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    height: 100vh;
+    margin: 0px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,13 +29,15 @@ body {
 
 }
 
-.header-content, 
+.header-content,
 .header-logo-links {
     padding-right: 150px;
     padding-left: 150px;
     justify-content: space-between;
 
 }
+
+
 
 .site-description {
     display: flex;
@@ -57,6 +59,8 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    padding-top: 25px;
 
 }
 
@@ -66,26 +70,42 @@ body {
     text-align: center;
 }
 
-.bundles{
+.bundles {
     display: flex;
 }
 
 
 .quote {
     display: flex;
-    background-color: rgb(204, 204, 204);
+    background-color: rgba(163, 182, 196, 0.4);
+    padding: 100px 300px;
 }
 
 .action {
     display: flex;
+    justify-content: center;
+}
+
+.action-box {
+
+    display: flex;
+    background-color: rgb(18, 132, 238);
+    width: 650px;
+    color: white;
+    border-radius: 10px;
+    margin: 100px 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .footer {
     height: 40px;
     background-color: rgb(46, 46, 62);
     color: rgb(170, 166, 166);
-    line-height:40px;
+    line-height: 40px;
     text-align: center;
+    font-size: small;
 
 }
 
@@ -95,7 +115,7 @@ a {
 
 }
 
-.header ul{
+.header ul {
     display: flex;
     list-style: none;
     gap: 10px;
@@ -110,9 +130,55 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    
+    flex-wrap: wrap;
+
 }
 
 button:hover {
     background-color: #f76e25;
+}
+
+blockquote {
+    width: 750px;
+    text-align: left;
+    color: rgb(135, 129, 129);
+    font-size: 20px;
+}
+
+
+
+
+.action-box p {
+    display: flex;
+    padding: 25px 50px;
+    justify-content: space-between;
+}
+
+.action-box button {
+    display: flex;
+    border: 1px solid white;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+figcaption.title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-logo-links img {
+    height: 100px;
+    width: 100px;
+}
+
+ul{
+    list-style: none;
+}
+
+.bundles img{
+    width: 200px;
+    height: 200px;
 }
